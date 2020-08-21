@@ -4,8 +4,9 @@
 
 import subprocess, signal, os, re, datetime
 
-print ("Running bSense 0.1\n")
+print ("Running bSense 0.2\n")
 log = open("sensor.dat", 'w')
+sensorList = os.system("termux-sensor -l > sensor.lst")
 print ("[*]Starting light sensor...")
 
 try:

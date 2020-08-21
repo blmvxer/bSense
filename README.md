@@ -1,6 +1,6 @@
-# bSense
+# bSense 0.2
 <br>
-<p><b>bSense 0.1 is a light sensor app using Termux:Api and Python 3.8+</b></p>
+<p><b>bSense is a light sensor app using Termux:Api and Python 3.8+</b></p>
 <br>
 <p>This script is still in dev process and includes logging to sensor.dat.
 <br>
@@ -15,4 +15,6 @@ $ apt install python git termux-api<br>
 $ git clone https://github.com/blmvxerHax/bSense.git<br>
 $ cd bSense<br>
 $ python3 sensor.py<br><br>
-<b>Remember to give Termux-Api permissions</b>
+<b>Remember to give Termux-Api permissions</b><br><br>
+<b>If any issues occur email sensor.dat and sensor.lst to quegmeister@gmail.com</b>
+
