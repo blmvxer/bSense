@@ -13,7 +13,7 @@ Install Termux and Termux-api via App Store<br>
 Open Termux<br>
 $ apt install python git termux-api<br>
 $ git clone https://github.com/blmvxerHax/bSense.git<br>
-$ cd bSense<br>
+$ cd bSense/bin<br>
 $ python3 sensor.py<br><br>
 
 <b>Remember to give Termux-Api permissions</b><br><br>
