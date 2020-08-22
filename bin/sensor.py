@@ -33,11 +33,26 @@ try:
       for p in topLux:
         if int(p) == 3407:
           continue
-        elif int(p) > 80000:
+        elif int(p) < 10000:
+          nowdt = datetime.datetime.now()
+          log.write("Lux: %s - %s\n" % (p, nowdt))
+          print ("Lux: %s" % p)
+          os.system("termux-brightness 120")
+        elif int(p) > 10000:
           nowdt = datetime.datetime.now()
           print ("Lux: %s [limit detected]" % p)
           log.write("Lux: %s [limit detected] - %s\n" % (p, nowdt))
-          os.system("termux-brightness 255")
+          os.system("termux-brightness 180")
+        elif int(p) > 30000:
+          nowdt = datetime.datetime.now()
+          print ("Lux: %s [limit detected]" % p)
+          log.write("Lux: %s [limit detected] - %s\n" % (p, nowdt))
+          os.system("termux-brightness 230")
+        elif int(p) > 50000:
+          nowdt = datetime.datetime.now()
+          print ("Lux: %s [limit detected]" % p)
+          log.write("Lux: %s [limit detected] - %s\n" % (p, nowdt))
+          os.system("termux-brightness 255") 
         else:
           nowdt = datetime.datetime.now()
           log.write("Lux: %s - %s\n" % (p, nowdt))
